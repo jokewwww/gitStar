@@ -2,6 +2,11 @@ package com.joker.thread;
 
 import java.util.concurrent.TimeUnit;
 
+/**
+ * 可重入锁
+ * 同步方法调用其他同步方法
+ * 可重入:同一个线程,多次调用同步代码,锁定同一个锁对象
+ */
 public class Current02 {
 
     synchronized void m1(){
