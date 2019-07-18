@@ -32,7 +32,9 @@ public class Current01 {
             }catch (Exception e){
                 e.printStackTrace();
             }
+            System.out.println("public  void m3() end");
         }
+
     }
 
     public static class MyThread implements Runnable{
@@ -58,9 +60,9 @@ public class Current01 {
 
     public static void main(String[] args){
         Current01 c=new Current01();
+        new Thread(new MyThread(-1,c)).start();
         new Thread(new MyThread(0,c)).start();
         new Thread(new MyThread(1,c)).start();
-        //new Thread(new MyThread(-1,c)).start();
     }
 
 }
