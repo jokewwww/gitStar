@@ -6,6 +6,7 @@ import java.util.concurrent.TimeUnit;
  * 可重入锁
  * 同步方法调用其他同步方法
  * 可重入:同一个线程,多次调用同步代码,锁定同一个锁对象
+ * 多线程锁定同一个锁对象是不可重入的
  */
 public class Current02 {
 
