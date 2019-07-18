@@ -2,6 +2,9 @@ package com.joker.thread;
 
 import java.util.concurrent.TimeUnit;
 
+/**
+ * 同步方法中发生异常的时候,自动释放所资源,不会影响其他线程的执行
+ */
 public class Current04 {
     int i=0;
     synchronized void m(){
@@ -29,6 +32,12 @@ public class Current04 {
         public void run() {
             t.m();
         }
-    });
+    },"Thread1").start();
+
+    new Thread(new Runnable() {
+        public void run() {
+            t.m();
+        }
+    },"Thread2").start();
   }
 }
