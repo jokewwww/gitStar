@@ -1,5 +1,10 @@
 package com.joker.thread;
 
+/**
+ * 同步粒度问题
+ *尽量在商业开发中避免同步方法,使用同步代码块
+ * 细粒度解决问题,提高效率
+ */
 public class Current08 {
 
     //效率低下,不建议使用
