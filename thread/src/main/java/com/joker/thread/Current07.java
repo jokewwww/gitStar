@@ -1,5 +1,6 @@
 package com.joker.thread;
 
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -25,6 +26,7 @@ public class Current07 {
 
     for (int i = 0; i < 10; i++){
       threads.add(new Thread(new Runnable() {
+          @Override
           public void run() {
               c.m();
           }
