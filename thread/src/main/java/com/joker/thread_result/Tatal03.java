@@ -21,7 +21,7 @@ public class Tatal03 {
         public void run() {
             if(t.size()!=5){
                 try{
-                    latch.await();
+                    latch.await();//等待门闩开放,不是进入等待队列
                 }catch(Exception e){
                     e.printStackTrace();
                 }
