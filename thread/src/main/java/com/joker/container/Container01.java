@@ -5,6 +5,8 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * 多线程模拟生产者和消费者
+ * wait/notify
+ * wait/notify都是和while配合使用的.可以避免多线程逻辑失效问题
  */
 public class Container01<E> {
     private final LinkedList<E> list=new LinkedList();
