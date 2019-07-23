@@ -7,6 +7,10 @@ import java.util.Vector;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.CountDownLatch;
 
+/**
+ * Arraylist线程非同步效率高
+ * Vector线程安全效率低
+ */
 public class CopyOnWriteList {
   public static void main(String[] args) {
 
