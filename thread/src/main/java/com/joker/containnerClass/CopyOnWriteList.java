@@ -10,6 +10,8 @@ import java.util.concurrent.CountDownLatch;
 /**
  * Arraylist线程非同步效率高
  * Vector线程安全效率低
+ *
+ * CopyOnWriteArrayList:写入效率低,读取效率高,每次写入数据,都会创建一个新的底层数组
  */
 public class CopyOnWriteList {
   public static void main(String[] args) {

@@ -11,7 +11,11 @@ import java.util.concurrent.CountDownLatch;
 /**
  * 并发容器
  * Hashtable和ConcurrentSkipListMap都是线程安全的容器
- * 但是ConcurrentSkipListMap比HashTable效率高得多
+ * 但是ConcurrentSkipListMap比HashTable效率高得多\
+ *
+ * ConcurrentHashMap底层是哈希实现的同步Map(Set).效率高,线程安全,轻量级
+ *
+ * ConcurrentSkipListMap这个效率是最慢的,但是内部是排序的
  */
 public class ConcurrentMap {
 
